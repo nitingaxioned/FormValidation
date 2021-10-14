@@ -100,17 +100,72 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 51%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
 
+header{
+  position:absolute;
+  top: 0;
+  width: 100%;
+}
 
+header>div:first-child{
+  display: flex;
+  justify-content: space-between;
+  padding: 29px;
+  margin-bottom: 11.9px;
+}
 
+header>div:nth-child(2){
+  background: rgba(43,126,198,0.5);
+  font-size: 11.5px;
+  padding: 2px 0;
+}
 
+.nav-list a{ 
+  margin: 7px;
+  color: #ffffff;
+  letter-spacing: 0.35px;
+}
 
+.nav-list li::after{
+  content: "|";
+  font-size: 15px;
+  color: #369fe3;
+}
+
+.nav-list li:nth-last-child(1):after{ content: ""; }
+nav{ margin: 0 1%; }
+
+.search{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4px;
+  padding-right: 2%;
+  box-sizing: border-box;
+  width: 32%;
+}
+
+.search input:nth-child(1){
+  background: #ffffff;
+  border: 1px solid #369fe3;
+  font-size: 12px;
+  padding: 0 10% 0 4%;
+}
+
+.search input:nth-child(2){
+  color: #ffffff;
+  background: #369fe3;
+  border: 1px solid #369fe3;
+  font-size: 12px;
+  padding: 0 6%;
+}
+
+input:focus{ outline: none; }
 
 /*=================================
   Header styling ends here
@@ -120,9 +175,26 @@ li {
   main styling starts here
 =================================*/
 
+.banner{
+  padding: 230px 0 105px;
+  background-image:  linear-gradient(to right,  #225faa 10%, #225faa, rgba(255,255,255,0.3),#225faa) , radial-gradient(at 90%, rgba(255,255,255,0.5), #225faa 50%), url("https://via.placeholder.com/1350x400");
+}
 
+.banner h3 {
+  color: #ffffff;
+  font-size: 32px;
+  padding-bottom: 10px;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+}
 
-
+.banner p {
+  color: #369fe3;
+  font-size: 25px;
+  width: 50%;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 0.55px;
+  line-height: 30px;
+}
 
 
 
