@@ -69,28 +69,28 @@
           <h3>Enter your details to subscribe to our newsletter</h3>
           <form name="signup">
             <div class="form-group">
-              <label>First name</label>
-              <input type="text" class="fname">
+              <label for="fname">First name</label>
+              <input type="text" id="fname">
               <span class="error hide-me fname-err">Error Will be display here</span>
             </div>
             <div class="form-group">
-              <label>Last name</label>
-              <input type="text" class="lname">
+              <label for="lname">Last name</label>
+              <input type="text" id="lname">
               <span class="error hide-me lname-err">Error Will be display here</span>
             </div>
             <div class="form-group">
-              <label>Position</label>
-              <input type="text" class="position">
+              <label class="position">Position</label>
+              <input type="text" id="position">
               <span class="error hide-me position-err">Error Will be display here</span>
             </div>
             <div class="form-group">
-              <label>Company</label>
-              <input type="text" class="company">
+              <label for="company">Company</label>
+              <input type="text" id="company">
               <span class="error hide-me company-err">Error Will be display here</span>
             </div>
             <div class="form-group">
-              <label>Company Type</label>
-              <select class="company-type">
+              <label for="company-type">Company Type</label>
+              <select id="company-type">
                 <option value="">-select-</option>
                 <option value="Sole Proprietorship">Sole Proprietorship</option>
                 <option value="Partnership">Partnership</option>
@@ -101,8 +101,8 @@
               <span class="error hide-me company-type-err">Error Will be display here</span>
             </div>
             <div class="form-group">
-              <label>Country</label>
-              <select class="country">
+              <label for="country">Country</label>
+              <select id="country">
                 <option value="">-Choose-</option>
                 <option value="Afganistan">Afghanistan</option>
                 <option value="Albania">Albania</option>
@@ -354,11 +354,11 @@
               <span class="error hide-me country-err">Error Will be display here</span>
             </div>
             <div class="form-group">
-              <label>Work email</label>
+              <label for="email">Work email</label>
               <input type="text" class="email">
               <span class="error hide-me email-err">Error Will be display here</span>
             </div>
-            <div class="form-group">
+            <div class="form-group form-checkbox-group">
               <label>FirFinancois part of The Fronomia Group. Would you also like to riceive information on subscription offers, Economist events and ther products via email?</label>
               <input type="checkbox" class="email" id="yes">
               <label for="yes">Yes</label>
