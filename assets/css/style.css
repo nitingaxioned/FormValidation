@@ -436,6 +436,7 @@ footer::after{
 /*media query for 1024px starts here*/
 @media only screen and (max-width: 1024px) {
   
+  .search input:nth-child(2):hover,
   input[type = "submit"]:hover{ background-color: #369fe3; }
   a:hover{ color: #fafafa; }
 
@@ -451,19 +452,97 @@ footer::after{
   .footer-block .wrapper,
   .signup-form .wrapper,
   .wrapper{ width: 90%; }
+  .banner{ padding: 150px 0 50px; }
+  .error{ left: 45%; }
 
 } 
 
 /*media query for 720px starts here*/
 @media only screen and (max-width: 720px) {
 
+  header::after{
+    content: "\f039";
+    font-family: fontAwesome;
+    font-size: 32px;
+    color: #fafafa;
+    position: absolute;
+    right: 20px;
+    top: 29px;
+    z-index: 2;
+  }
+
+  .search{
+    position: fixed;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    padding-right: 0;
+    z-index: 4;
+  }
+
+  .nav-container{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+  }
+
+  .nav-container::after{
+    content: "\f00d";
+    font-family: fontAwesome;
+    font-size: 28px;
+    color: #fafafa;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 4;
+  }
+
+  .nav-list{ 
+    display: flex;
+    left: 0;
+    flex-direction: column; 
+    text-align: center;
+    margin: 120px auto 50px;
+  }
+
+  nav{ width: 98%; }
+  h1{margin: 0;}
+  header .wrapper{ width: 80%; }
+  .nav-container .wrapper{ width: 100%; }
+  header>div:nth-child(2){ background: linear-gradient(to right,  #194b88, #16254c ); }
+
   
+  .footer-list{ 
+    display: flex;
+    padding-bottom: 10px;
+  }
 
-} 
+  
+  .social-links,
+  .page-links,
+  .intro-block{
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+  }
 
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
+  .nav-list li::after{ content: ""; }
+  .nav-hide{ display: none; }
+  .footer-block-list,
+  .footer-list,
+  footer .wrapper{ flex-direction: column; }
+  .footer-list li::after{ content: ""; }
+  footer p{ text-align: center; }
+  .form-group select{ width: 82%; }
+  .form-group input{ width: 80%; }
+  .form-checkbox-group input{  width: auto; }
+  .banner p { width: 90%; }
 
-
-
+  .error{
+    left: 0%;
+    bottom: -13px;
+  }
 } 
