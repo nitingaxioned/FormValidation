@@ -373,6 +373,31 @@ h4 a{ margin-right: 15%; }
   margin-right: 5%;
   margin-top: 8px;
 }
+
+.popup{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background: #ffffff;
+  color: #fafafa;
+}
+
+.popup-card{
+  width: 30%;
+  padding: 50px 3%;
+  min-width: 200px;
+  box-sizing: border-box;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #369fe3;
+  margin: 150px auto 10px;
+}
+
+.popup-card h3{ font-size: 35px; }
+.popup-card p{ margin-top: 20px; }
 /*=================================
   main styling ends here
 =================================*/
