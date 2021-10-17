@@ -423,7 +423,43 @@ footer::after{
 =================================*/ 
 
 /*media query starts*/
+/*media query for 1280px starts here*/
+@media only screen and (max-width: 1280px) {
 
+  footer .wrapper,
+  .footer-block .wrapper,
+  .signup-form .wrapper,
+  .wrapper{ width: 70%; }
+  footer .wrapper{ margin-bottom: 0; }
+}
+
+/*media query for 1024px starts here*/
+@media only screen and (max-width: 1024px) {
+  
+  input[type = "submit"]:hover{ background-color: #369fe3; }
+  a:hover{ color: #fafafa; }
+
+} 
+
+/*media query for 995px starts here*/
+@media only screen and (max-width: 995px) {
+
+  .form-group select{ width: 42%; }
+  .form-group input{ width: 40%; }
+  .form-checkbox-group input{  width: auto; }
+  footer .wrapper,
+  .footer-block .wrapper,
+  .signup-form .wrapper,
+  .wrapper{ width: 90%; }
+
+} 
+
+/*media query for 720px starts here*/
+@media only screen and (max-width: 720px) {
+
+  
+
+} 
 
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
